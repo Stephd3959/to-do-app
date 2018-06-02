@@ -1,0 +1,11 @@
+
+<ol>
+    <li ng-repeat="todo in $ctrl.toDoList | filter: $ctrl.filterBy track by $index">{{ todo }}
+        <span ng-click="$ctrl.delete($index)"> 
+            <i class="material-icons">close</i>
+        </span>
+    </li>
+    
+        <!-- <button ng-click="$ctrl.delete($index)">x</button></li> -->
+</ol>
+

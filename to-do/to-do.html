@@ -1,0 +1,16 @@
+<form>
+        <!-- <h1>TODO List {{$ctrl.toDoList}} </h1> -->
+    <h3>TODO List</h3>
+        <p>A place to store things you have to do</p>
+<input type="text" placeholder="filter your list" ng-model="$ctrl.search"/>
+
+<!-- <ol>
+    <li ng-repeat="todo in $ctrl.toDoList | filter: $ctrl.search track by $index">{{ todo }}<span ng-click="$ctrl.delete($index)"> 
+        <i class="material-icons">close</i></li></span>
+        <!-- <button ng-click="$ctrl.delete($index)">x</button></li> -->
+<!--</ol> -->
+<input type="text" placeholder="add a new item" ng-model="$ctrl.newItem" ng-keydown="$ctrl.onKeyDown($event)"/><br>
+<button ng-click="$ctrl.add()">ADD </button>
+<h4>{{$ctrl.toDolist}}</h4>
+
+</form>
